@@ -1,0 +1,55 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dbeaf7;
+    padding: 120px 0px 70px 0;
+
+    &__article {
+        border: 20px dashed black;
+        padding: 100px;
+    }
+
+    &__header {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__addres {
+        font-size: 27px;
+        font-weight: normal;
+        margin-bottom: 27px;
+
+    }
+
+    &__addres::before {
+        content: url(../assets/icons/location.svg);
+        margin-right: 10px;
+    }
+
+    &__phone {
+        font-size: 27px;
+        font-weight: normal;
+    }
+
+    &__phone::before {
+        content: url(../assets/icons/phone-call.svg);
+        margin-right: 10px;
+    }
+
+    &__mail {
+        font-size: 27px;
+        font-weight: normal;
+    }
+
+    &__mail::before {
+        content: url(../assets/icons/mail.svg);
+        margin-right: 10px;
+    }
+
+    &__paragraph {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+}

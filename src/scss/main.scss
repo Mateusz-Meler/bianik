@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,500&display=swap');
 @import "modules/nav";
+@import "modules/contact";
+@import "modules/home";
+@import "modules/about";
 
 *,
 *:before,
@@ -12,33 +16,25 @@ html {
   box-sizing: border-box;
 }
 
-.about {
-  padding: 70px 70px;
-
-  &__article {
-    max-width: 700px;
-    text-align: justify;
-    line-height: 27px;
-    border: 20px dashed black;
-    padding: 100px;
-  }
-
-  &__content {
-    &--special {
-      text-align: center;
-      font-weight: bold;
-      margin: 40px 0;
-    }
-  }
-
-  &__header {
-    font-size: 40px;
-    text-align: center;
-  }
+.arrow {
+  align-self: flex-end;
+  margin-right: 35px;
+  margin-top: 50px;
+  transition: transform 400ms ease-in;
+  opacity: 1;
+  position: sticky;
+  bottom: 0;
 }
+
+.arrow:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
 
 body {
   margin: 0;
+  font-family: 'Alegreya', serif;
 }
 
 .button {
@@ -73,60 +69,6 @@ body {
 
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #dbeaf7;
-  padding: 120px 0px;
-
-  &__article {
-    border: 20px dashed black;
-    padding: 100px;
-  }
-
-  &__header {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-
-  &__addres {
-    font-size: 27px;
-    font-weight: normal;
-    margin-bottom: 27px;
-
-  }
-
-  &__addres::before {
-    content: url(../assets/icons/location.svg);
-    margin-right: 10px;
-  }
-
-  &__phone {
-    font-size: 27px;
-    font-weight: normal;
-  }
-
-  &__phone::before {
-    content: url(../assets/icons/phone-call.svg);
-    margin-right: 10px;
-  }
-
-  &__mail {
-    font-size: 27px;
-    font-weight: normal;
-  }
-
-  &__mail::before {
-    content: url(../assets/icons/mail.svg);
-    margin-right: 10px;
-  }
-
-  &__paragraph {
-    margin-bottom: 40px;
-  }
-}
 
 footer {
   width: 100%;
@@ -137,34 +79,4 @@ footer {
 }
 
 
-.home {
-  background: url(../assets/img/DJI_0313.png);
-  background-size: cover;
-
-  height: 100vh;
-  background-position: center;
-
-  &__header {
-    color: white;
-    max-width: 42%;
-    font-size: 27px;
-    padding: 100px 0 0 100px;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-  }
-
-  &__paragraph {
-    color: white;
-    max-width: 42%;
-    font-size: 27px;
-    padding: 20px 0 0 100px;
-    line-height: 40px;
-    font-family: 'Playfair Display', serif;
-  }
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  width: 100%;
-}
+img {}

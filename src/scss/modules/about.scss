@@ -1,0 +1,24 @@
+.about {
+    padding: 70px 70px;
+
+    &__article {
+        max-width: 700px;
+        text-align: justify;
+        line-height: 27px;
+        border: 20px dashed black;
+        padding: 100px;
+    }
+
+    &__content {
+        &--special {
+            text-align: center;
+            font-weight: bold;
+            margin: 40px 0;
+        }
+    }
+
+    &__header {
+        font-size: 45px;
+        text-align: center;
+    }
+}
