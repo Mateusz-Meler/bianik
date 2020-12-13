@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 @import "modules/nav";
 
 *,
@@ -19,6 +19,8 @@ html {
     max-width: 700px;
     text-align: justify;
     line-height: 27px;
+    border: 20px dashed black;
+    padding: 100px;
   }
 
   &__content {
@@ -30,15 +32,13 @@ html {
   }
 
   &__header {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
   }
 }
 
 body {
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
-
 }
 
 .button {
@@ -66,7 +66,10 @@ body {
 
 .box {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding-top: 50px;
+  max-width: 100%;
 
 }
 
@@ -77,15 +80,21 @@ body {
   background-color: #dbeaf7;
   padding: 120px 0px;
 
-  &__artcile {}
+  &__article {
+    border: 20px dashed black;
+    padding: 100px;
+  }
 
   &__header {
     font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
   }
 
   &__addres {
     font-size: 27px;
     font-weight: normal;
+    margin-bottom: 27px;
 
   }
 
@@ -113,6 +122,10 @@ body {
     content: url(../assets/icons/mail.svg);
     margin-right: 10px;
   }
+
+  &__paragraph {
+    margin-bottom: 40px;
+  }
 }
 
 footer {
@@ -134,10 +147,10 @@ footer {
   &__header {
     color: white;
     max-width: 42%;
-    font-family: 'Crimson Text', serif;
     font-size: 27px;
     padding: 100px 0 0 100px;
     margin: 0;
+    font-family: 'Playfair Display', serif;
   }
 
   &__paragraph {
@@ -145,6 +158,8 @@ footer {
     max-width: 42%;
     font-size: 27px;
     padding: 20px 0 0 100px;
+    line-height: 40px;
+    font-family: 'Playfair Display', serif;
   }
 }
 
