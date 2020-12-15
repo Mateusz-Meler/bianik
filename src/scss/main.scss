@@ -72,11 +72,21 @@ body {
 
 footer {
   width: 100%;
-  color: white;
+  color: #fff;
   background-color: #000;
   text-align: center;
   padding: 70px 70px;
 }
 
+.cooperation__box {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 
-img {}
+  &--image {
+    width: 10%;
+  }
+}
