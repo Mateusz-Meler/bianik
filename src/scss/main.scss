@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
 @import "modules/nav";
 @import "modules/contact";
 @import "modules/home";
@@ -14,6 +13,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .arrow {
@@ -34,7 +34,6 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Alegreya', serif;
 }
 
 .button {
