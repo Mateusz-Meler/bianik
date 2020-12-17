@@ -9,7 +9,20 @@
         box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
     }
 
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 50px;
+        max-width: 100%;
+    }
+
     &__content {
+        @media (max-width: 768px) {
+            line-height: 20px;
+            font-size: 14px;
+        }
+
         &--special {
             text-align: center;
             font-weight: bold;
@@ -21,4 +34,10 @@
         font-size: 45px;
         text-align: center;
     }
+
+    &__image {
+        max-width: 40%;
+        display: block;
+    }
+
 }

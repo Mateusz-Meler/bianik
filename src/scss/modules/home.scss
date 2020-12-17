@@ -7,19 +7,26 @@
 
     &__header {
         color: white;
-        max-width: 42%;
         font-size: 27px;
-        padding: 100px 0 0 100px;
+        padding: 100px 0 0 55px;
         margin: 0;
+        text-align: left;
+        width: 603px;
 
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            width: 566px;
+        }
     }
+
 
     &__paragraph {
         color: white;
-        max-width: 42%;
         font-size: 27px;
-        padding: 20px 0 0 100px;
+        padding-left: 55px;
         line-height: 40px;
+        width: 517px;
+        text-align: left;
 
     }
 }

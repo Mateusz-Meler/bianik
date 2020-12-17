@@ -24,6 +24,10 @@ html {
   opacity: 1;
   position: sticky;
   bottom: 0;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .arrow:hover {
@@ -47,6 +51,10 @@ body {
   opacity: 1;
   box-shadow: 0 8px 6px -6px black;
 
+  @media (max-width: 768px) {
+    width: 155px;
+  }
+
   &__text {
     text-decoration: none;
     font-weight: bold;
@@ -59,16 +67,6 @@ body {
   opacity: 0.7;
 
 }
-
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 50px;
-  max-width: 100%;
-
-}
-
 
 footer {
   width: 100%;
@@ -85,5 +83,9 @@ footer {
   justify-content: space-around;
   align-items: center;
 
-  &--image {}
+  &--image {
+    @media (max-width: 1131px) {
+      width: 10%;
+    }
+  }
 }
