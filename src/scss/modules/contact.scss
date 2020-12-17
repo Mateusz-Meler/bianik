@@ -14,12 +14,20 @@
         font-size: 45px;
         text-align: center;
         margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
     }
 
     &__addres {
         font-size: 27px;
         font-weight: normal;
         margin-bottom: 27px;
+
+        @media (max-width: 768px) {
+            font-size: 23px;
+        }
 
     }
 
@@ -31,6 +39,10 @@
     &__phone {
         font-size: 27px;
         font-weight: normal;
+
+        @media (max-width: 768px) {
+            font-size: 23px;
+        }
     }
 
     &__phone::before {
@@ -41,6 +53,10 @@
     &__mail {
         font-size: 27px;
         font-weight: normal;
+
+        @media (max-width: 768px) {
+            font-size: 23px;
+        }
     }
 
     &__mail::before {
@@ -53,5 +69,9 @@
         font-size: 20px;
         text-decoration: none;
         color: #000;
+
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
     }
 }

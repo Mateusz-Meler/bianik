@@ -13,16 +13,19 @@
         font-size: 58px;
         font-family: 'Josefin Sans', sans-serif;
         color: #fff;
-        margin-top: 2px;
-        margin-left: 100px;
+        margin: 2px 0 0 100px;
 
         @media (max-width: 1024px) {
             margin-left: 50px;
         }
+
+        @media (max-width: 768px) {
+            font-size: 48px;
+            margin-top: 7px;
+        }
     }
 
     &__box {
-        display: inline-block;
         display: flex;
         align-items: center;
         margin-right: 170px;
@@ -49,6 +52,10 @@
             margin-right: 20px;
             color: white;
             font-size: 30px;
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
         }
 
         &--about:hover {
@@ -60,6 +67,10 @@
             margin-right: 20px;
             color: white;
             font-size: 30px;
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
         }
 
         &--offer:hover {
@@ -70,6 +81,10 @@
             text-decoration: none;
             color: white;
             font-size: 30px;
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
         }
 
         &--contact:hover {
