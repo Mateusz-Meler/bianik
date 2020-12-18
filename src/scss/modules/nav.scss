@@ -8,22 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    &__bianik {
-        text-decoration: none;
-        font-size: 58px;
-        font-family: 'Josefin Sans', sans-serif;
-        color: #fff;
-        margin: 2px 0 0 100px;
-
-        @media (max-width: 1024px) {
-            margin-left: 50px;
-        }
-
-        @media (max-width: 768px) {
-            font-size: 48px;
-            margin-top: 7px;
-        }
-    }
+    &__bianik {}
 
     &__box {
         display: flex;

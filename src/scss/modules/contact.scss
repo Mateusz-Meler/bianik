@@ -5,9 +5,15 @@
     background-color: #dbeaf7;
     padding: 120px 0px 70px 0;
 
-    &__article {
+    &__box {
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
     }
+
+    &__article {}
 
     &__header {
         font-size: 45px;
@@ -75,4 +81,23 @@
             font-size: 15px;
         }
     }
+}
+
+.arrow {
+    align-self: flex-end;
+    margin-right: 35px;
+    margin-top: 50px;
+    transition: transform 400ms ease-in;
+    opacity: 1;
+    position: sticky;
+    bottom: 0;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
 }
