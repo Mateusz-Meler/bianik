@@ -42,6 +42,10 @@
     &__image {
         max-width: 40%;
         display: block;
+
+        @media (max-width: 1400px) {
+            display: none;
+        }
     }
 
 }
@@ -56,10 +60,6 @@
     transition: transform 400ms ease-in;
     opacity: 1;
     box-shadow: 0 8px 6px -6px black;
-
-    @media (max-width: 768px) {
-        width: 155px;
-    }
 
     &__text {
         text-decoration: none;

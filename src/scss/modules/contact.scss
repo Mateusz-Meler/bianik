@@ -7,10 +7,12 @@
 
     &__box {
         width: 100%;
+        max-width: 1600px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: nowrap;
+        margin-top: 50px;
+
     }
 
     &__article {}

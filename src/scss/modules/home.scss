@@ -1,9 +1,22 @@
 .home {
     background: url(../assets/img/DJI_0313.png);
     background-size: cover;
-
     height: 100vh;
     background-position: center;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 1600px;
+
+
+    }
 
     &__header {
         color: white;
