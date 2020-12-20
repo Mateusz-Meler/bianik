@@ -14,7 +14,6 @@
         flex-direction: row;
         justify-content: center;
         padding-top: 50px;
-        max-width: 100%;
     }
 
     &__content {
@@ -60,6 +59,10 @@
     transition: transform 400ms ease-in;
     opacity: 1;
     box-shadow: 0 8px 6px -6px black;
+
+    @media (max-width: 768px) {
+        width: 200px;
+    }
 
     &__text {
         text-decoration: none;

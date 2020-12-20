@@ -32,6 +32,11 @@
             width: 566px;
         }
 
+        @media (min-width: 1024px) {
+            line-height: 50px;
+        }
+
+
         @media (max-width: 768px) {
             font-size: 20px;
             width: 467px;
@@ -42,7 +47,6 @@
             width: 300px;
         }
     }
-
 
     &__paragraph {
         color: white;
@@ -60,6 +64,10 @@
         @media (max-width: 500px) {
             font-size: 18px;
             width: 300px;
+        }
+
+        @media (min-width: 1024px) {
+            line-height: 40px;
         }
     }
 }

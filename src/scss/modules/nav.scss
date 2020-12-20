@@ -13,13 +13,28 @@
         justify-content: space-around;
         max-width: 1600px;
         width: 100%;
+
+        @media (max-width: 740px) {
+            transform: scale(.7);
+        }
+
+        @media (max-width: 500px) {
+            transform: scale(.5);
+        }
+
+        @media (max-width: 360px) {
+            transform: scale(.4);
+        }
     }
 
-    &__bianik {}
+    &__bianik {
+        margin-right: 100px;
+    }
 
     &__box {
         display: flex;
         align-items: center;
+
 
 
         &--home {
@@ -39,8 +54,9 @@
             margin-right: 20px;
             color: white;
             font-size: 30px;
+            white-space: nowrap;
 
-            @media (max-width: 768px) {
+            @media (max-width: 800px) {
                 font-size: 25px;
             }
         }
@@ -55,7 +71,7 @@
             color: white;
             font-size: 30px;
 
-            @media (max-width: 768px) {
+            @media (max-width: 800px) {
                 font-size: 25px;
             }
         }
@@ -69,7 +85,7 @@
             color: white;
             font-size: 30px;
 
-            @media (max-width: 768px) {
+            @media (max-width: 800px) {
                 font-size: 25px;
             }
         }
