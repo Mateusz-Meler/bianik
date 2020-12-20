@@ -1,5 +1,6 @@
 .about {
     padding: 70px 70px;
+    background-color: #f8f9fa;
 
     &__article {
         max-width: 700px;
@@ -7,6 +8,7 @@
         line-height: 27px;
         padding: 50px;
         box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+        background-color: #fff;
     }
 
     &__box {
@@ -32,6 +34,7 @@
     &__header {
         font-size: 45px;
         text-align: center;
+        margin-top: 0;
 
         @media (max-width: 767px) {
             font-size: 40px;
