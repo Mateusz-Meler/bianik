@@ -17,7 +17,7 @@
     }
 
     &__content {
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             line-height: 20px;
             font-size: 14px;
         }
@@ -33,7 +33,7 @@
         font-size: 45px;
         text-align: center;
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             font-size: 40px;
         }
     }
@@ -60,7 +60,7 @@
     opacity: 1;
     box-shadow: 0 8px 6px -6px black;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         width: 200px;
     }
 
