@@ -9,39 +9,72 @@
 
     &__container {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
+        flex-direction: row;
         max-width: 1600px;
         width: 100%;
+        position: relative;
 
-        @media (max-width: 740px) {
-            transform: scale(.7);
+        @media (max-width: 768px) {
+            justify-content: space-between;
+
         }
 
-        @media (max-width: 500px) {
-            transform: scale(.5);
+        @media (max-width: 768px) {
+            margin-left: -60px;
         }
 
-        @media (max-width: 360px) {
-            transform: scale(.4);
+        @media (max-width: 550px) {
+            margin-left: -100px;
         }
     }
 
     &__bianik {
         margin-right: 100px;
+        margin-left: 0;
+
+        &--item {
+            position: absolute;
+            left: 0;
+
+
+            @media (max-width: 768px) {
+                transform: scale(.7);
+
+            }
+
+            @media (max-width: 550px) {
+                transform: scale(.5);
+            }
+
+            @media (max-width: 360px) {
+                transform: scale(.4);
+            }
+        }
     }
 
     &__box {
         display: flex;
         align-items: center;
 
+        @media (max-width: 768px) {
+            transform: scale(.7);
 
+        }
+
+        @media (max-width: 550px) {
+            transform: scale(.5);
+        }
+
+        @media (max-width: 360px) {
+            transform: scale(.4);
+        }
 
         &--home {
             text-decoration: none;
             margin-right: 20px;
             color: white;
-            font-size: 30px;
+            font-size: 26px;
             display: none;
         }
 
@@ -53,7 +86,7 @@
             text-decoration: none;
             margin-right: 20px;
             color: white;
-            font-size: 30px;
+            font-size: 26px;
             white-space: nowrap;
 
             @media (max-width: 800px) {
@@ -69,7 +102,7 @@
             text-decoration: none;
             margin-right: 20px;
             color: white;
-            font-size: 30px;
+            font-size: 26px;
 
             @media (max-width: 800px) {
                 font-size: 25px;
@@ -83,7 +116,7 @@
         &--contact {
             text-decoration: none;
             color: white;
-            font-size: 30px;
+            font-size: 26px;
 
             @media (max-width: 800px) {
                 font-size: 25px;
@@ -94,4 +127,5 @@
             color: #ccc;
         }
     }
+
 }
