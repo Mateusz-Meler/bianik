@@ -36,8 +36,8 @@
     }
 
     &__addres {
-        font-size: 27px;
-        font-weight: normal;
+        font-size: 20px;
+        font-weight: bold;
         margin: 45px 0 20px 0;
 
         @media (max-width: 767px) {
@@ -52,8 +52,8 @@
     }
 
     &__phone {
-        font-size: 27px;
-        font-weight: normal;
+        font-size: 20px;
+        font-weight: bold;
         margin: 45px 0 20px 0;
 
         @media (max-width: 768px) {
@@ -67,8 +67,8 @@
     }
 
     &__mail {
-        font-size: 27px;
-        font-weight: normal;
+        font-size: 20px;
+        font-weight: bold;
         margin: 45px 0 20px 0;
 
         @media (max-width: 768px) {
@@ -83,7 +83,7 @@
 
     &__paragraph {
         margin: 0;
-        font-size: 20px;
+        font-size: 18px;
         text-decoration: none;
         color: #000;
 
