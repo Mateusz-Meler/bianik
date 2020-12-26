@@ -44,7 +44,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.2.1",
+    "bootstrap-icons": "^1.2.2",
     "normalize.css": "^8.0.1",
     "smooth-scroll": "^16.1.3"
   }

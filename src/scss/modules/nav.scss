@@ -56,6 +56,7 @@
     &__box {
         display: flex;
         align-items: center;
+        list-style: none;
 
         @media (max-width: 768px) {
             transform: scale(.7);
