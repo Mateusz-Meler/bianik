@@ -1,71 +1,67 @@
 .home {
-    background: url(../assets/img/DJI_0313.png);
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
+  background: url(../assets/img/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
 
-    &__container {
-        display: flex;
-        justify-content: center;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1600px;
+  }
+
+  &__header {
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 100px;
+    text-align: left;
+    width: 517px;
+    background-color: rgb(0, 0, 0, 0.5);
+
+    @media (min-width: 1024px) {
+      line-height: 30px;
     }
 
-    &__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 1600px;
-
-
+    @media (max-width: 767px) {
+      width: 474px;
     }
 
-    &__header {
-        color: white;
-        font-size: 20px;
-        padding: 30px;
-        margin-top: 100px;
-        text-align: left;
-        width: 517px;
-        background-color: rgb(0, 0, 0, 0.5);
-
-        @media (min-width: 1024px) {
-            line-height: 30px;
-        }
-
-
-        @media (max-width: 767px) {
-            width: 474px;
-        }
-
-        @media (max-width: 500px) {
-            font-size: 13px;
-            width: 300px;
-        }
-
-        &--paragraph {
-            margin: 0;
-        }
+    @media (max-width: 500px) {
+      font-size: 13px;
+      width: 300px;
     }
 
-    &__paragraph {
-        color: white;
-        font-size: 20px;
-        padding: 30px;
-        width: 517px;
-        text-align: left;
-        background-color: rgb(0, 0, 0, 0.5);
-
-        @media (max-width: 767px) {
-
-            width: 474px;
-        }
-
-        @media (max-width: 500px) {
-            font-size: 13px;
-            width: 300px;
-        }
-
-        @media (min-width: 1024px) {
-            line-height: 30px;
-        }
+    &--paragraph {
+      margin: 0;
     }
+  }
+
+  &__paragraph {
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    width: 517px;
+    text-align: left;
+    background-color: rgb(0, 0, 0, 0.5);
+
+    @media (max-width: 767px) {
+      width: 474px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 13px;
+      width: 300px;
+    }
+
+    @media (min-width: 1024px) {
+      line-height: 30px;
+    }
+  }
 }
