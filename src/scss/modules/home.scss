@@ -3,6 +3,12 @@
   background-size: cover;
   height: 100vh;
   background-position: center;
+  @media (min-width: 1600px) {
+    background: url(../assets/img/background2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
 
   &__container {
     display: flex;
