@@ -1,113 +1,128 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c0c0c0;
+  padding: 120px 0px 70px 0;
+
+  &__box {
+    width: 100%;
+    max-width: 1600px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #c0c0c0;
-    padding: 120px 0px 70px 0;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
 
-    &__box {
-        width: 100%;
-        max-width: 1600px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 50px;
-
-        @media (max-width: 767px) {
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-
-        }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      text-align: center;
     }
+  }
 
-    &__article {}
+  &__article {
+  }
 
-    &__header {
-        font-size: 45px;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 30px;
+  &__header {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
 
-        @media (max-width: 767px) {
-            font-size: 40px;
-            margin: 0;
-        }
+    @media (max-width: 767px) {
+      font-size: 40px;
+      margin: 0;
     }
+  }
 
-    &__addres {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 45px 0 20px 0;
+  &__addres {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 45px 0 20px 0;
 
-        @media (max-width: 767px) {
-            font-size: 23px;
-        }
-
+    @media (max-width: 767px) {
+      font-size: 23px;
     }
+  }
 
-    &__addres::before {
-        content: url(../assets/icons/location.svg);
-        margin-right: 10px;
+  &__addres::before {
+    content: url(../assets/icons/house.svg);
+    margin-right: 10px;
+  }
+
+  &__data {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 45px 0 20px 0;
+
+    @media (max-width: 767px) {
+      font-size: 23px;
     }
+  }
 
-    &__phone {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 45px 0 20px 0;
+  &__data::before {
+    content: url(../assets/icons/building.svg);
+    margin-right: 10px;
+  }
 
-        @media (max-width: 768px) {
-            font-size: 23px;
-        }
+  &__phone {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 45px 0 20px 0;
+
+    @media (max-width: 768px) {
+      font-size: 23px;
     }
+  }
 
-    &__phone::before {
-        content: url(../assets/icons/phone-call.svg);
-        margin-right: 10px;
+  &__phone::before {
+    content: url(../assets/icons/telephone.svg);
+    margin-right: 10px;
+  }
+
+  &__mail {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 45px 0 20px 0;
+
+    @media (max-width: 768px) {
+      font-size: 23px;
     }
+  }
 
-    &__mail {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 45px 0 20px 0;
+  &__mail::before {
+    content: url(../assets/icons/envelope.svg);
+    margin-right: 10px;
+  }
 
-        @media (max-width: 768px) {
-            font-size: 23px;
-        }
+  &__paragraph {
+    margin: 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+
+    @media (max-width: 767px) {
+      font-size: 15px;
     }
-
-    &__mail::before {
-        content: url(../assets/icons/mail.svg);
-        margin-right: 10px;
-    }
-
-    &__paragraph {
-        margin: 0;
-        font-size: 18px;
-        text-decoration: none;
-        color: #000;
-
-        @media (max-width: 767px) {
-            font-size: 15px;
-        }
-    }
+  }
 }
 
 .arrow {
-    align-self: flex-end;
-    margin-right: 35px;
-    margin-top: 50px;
-    transition: transform 400ms ease-in;
-    opacity: 1;
-    position: sticky;
-    bottom: 0;
+  align-self: flex-end;
+  margin-right: 35px;
+  margin-top: 50px;
+  transition: transform 400ms ease-in;
+  opacity: 1;
+  position: sticky;
+  bottom: 0;
 
-    @media (max-width: 767px) {
-        display: none;
-    }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .arrow:hover {
-    transform: scale(1.1);
-    opacity: 0.7;
+  transform: scale(1.1);
+  opacity: 0.7;
 }
