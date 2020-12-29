@@ -54,6 +54,8 @@
       top: 7px;
       @media (max-width: 768px) {
         top: 2px;
+        transform: scale(0.8);
+        left: -24px;
       }
     }
   }
@@ -96,6 +98,9 @@
       color: white;
       font-size: 26px;
       white-space: nowrap;
+      @media (max-width: 768px) {
+        font-size: 23px;
+      }
     }
 
     &--about:hover {
