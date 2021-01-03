@@ -3,6 +3,8 @@
 @import "modules/contact";
 @import "modules/home";
 @import "modules/about";
+@import "modules/achievments";
+@import "modules/offer";
 
 html {
   box-sizing: border-box;
@@ -42,95 +44,5 @@ footer {
     @media (max-width: 1131px) {
       width: 10%;
     }
-  }
-}
-
-.offer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 70px 0;
-
-  &__header {
-    margin-bottom: 40px;
-    font-size: 45px;
-  }
-
-  &__box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-
-    &--item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(238, 238, 238);
-      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-        0 1px 3px 1px rgba(60, 64, 67, 0.15);
-      padding: 30px;
-      margin: 25px;
-      width: 250px;
-      height: 250px;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-}
-
-.achievments {
-  padding: 150px 0 120px 0;
-  background: url(../assets/img/achievment.jpg);
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-
-  &__box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color: white;
-    z-index: 1;
-    max-width: 1600px;
-    @media (max-width: 1120px) {
-      max-width: 839px;
-    }
-  }
-}
-.achievments::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background-color: #000;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  opacity: 50%;
-}
-.div {
-  width: 200px;
-  margin: 30px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 15px;
-
-  &__header {
-    font-size: 36px;
-    margin: 15px 0 12px 0;
-    text-align: center;
-    white-space: nowrap;
-  }
-  &__paragraph {
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
   }
 }
