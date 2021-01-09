@@ -32,3 +32,44 @@
     }
   }
 }
+
+.offer__box--item1,
+.offer__box--item2,
+.offer__box--item3,
+.offer__box--item4,
+.offer__box--item5,
+.offer__box--item6 {
+  transition: transform 0.5s ease-in-out;
+}
+
+.offer__box--item1:hover {
+  background-color: #713e5a;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.offer__box--item2:hover {
+  background-color: #63a375;
+  transform: scale(1.2);
+  color: #fff;
+}
+.offer__box--item3:hover {
+  background-color: #d57a66;
+  transform: scale(1.2);
+  color: #fff;
+}
+.offer__box--item4:hover {
+  background-color: #ca6680;
+  transform: scale(1.2);
+  color: #fff;
+}
+.offer__box--item5:hover {
+  background-color: #e3655b;
+  transform: scale(1.2);
+  color: #fff;
+}
+.offer__box--item6:hover {
+  background-color: #fa9500;
+  transform: scale(1.2);
+  color: #fff;
+}
