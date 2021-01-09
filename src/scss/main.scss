@@ -41,8 +41,6 @@ footer {
   align-items: center;
 
   &--image {
-    @media (max-width: 1131px) {
-      width: 10%;
-    }
+    width: 10%;
   }
 }
