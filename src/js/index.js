@@ -23,7 +23,7 @@ const navSlide = () => {
 navSlide();
 
 const counters = document.querySelectorAll(".div__header");
-const speed = 400;
+const speed = 200;
 counters.forEach((counter) => {
   const updateCount = () => {
     const target = +counter.getAttribute("data-target");
