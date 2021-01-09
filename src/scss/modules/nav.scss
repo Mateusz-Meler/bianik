@@ -32,6 +32,9 @@
   @media (max-width: 768px) {
     justify-content: space-between;
   }
+  @media (min-width: 769px) {
+    z-index: 2;
+  }
 
   &__container {
     display: flex;
@@ -47,7 +50,6 @@
 
   &__bianik {
     margin-left: 0;
-
     &--item {
       position: absolute;
       left: 0px;
