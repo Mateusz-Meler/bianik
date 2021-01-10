@@ -26,8 +26,8 @@ const custom = document.querySelector(".achievements");
 const counters = document.querySelectorAll(".div__header");
 const speed = 200;
 
-const isInViewport = () => {
-  const bounding = elem.getBoundingClientRect();
+var isInViewport = function (elem) {
+  var bounding = elem.getBoundingClientRect();
   return (
     bounding.top >= 0 &&
     bounding.left >= 0 &&
