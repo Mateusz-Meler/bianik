@@ -24,7 +24,7 @@ navSlide();
 
 const custom = document.querySelector(".achievements");
 const counters = document.querySelectorAll(".div__header");
-const speed = 200;
+const speed = 500;
 
 var isInViewport = function (elem) {
   var bounding = elem.getBoundingClientRect();
