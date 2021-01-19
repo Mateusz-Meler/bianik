@@ -22,43 +22,38 @@ const navSlide = () => {
 };
 navSlide();
 
-const custom = document.querySelector(".achievements");
 const counters = document.querySelectorAll(".div__header");
 const speed = 500;
-
-var isInViewport = function (elem) {
-  var bounding = elem.getBoundingClientRect();
-  return (
-    bounding.top >= 0 &&
-    bounding.left >= 0 &&
-    bounding.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    bounding.right <=
-      (window.innerWidth || document.documentElement.clientWidth)
-  );
+const sectionAchievements = document.querySelector(".achievements");
+const mediaQuery = window.matchMedia("(max-width: 560px)");
+const options = {
+  root: null, // it is a viewport
+  threshold: 1,
+  rootMargin: "",
 };
-window.addEventListener("scroll", function () {
-  if (isInViewport(custom)) {
-    console.log("You scrolled !");
-
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-        const inc = target / speed;
-        if (count < target) {
-          counter.innerText = Math.ceil(count + inc);
-          setTimeout(updateCount, 1);
-        } else {
-          count.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  }
-  // else {
-  //   counters.forEach(function (e) {
-  //     e.innerText = 0;
-  //   });
-  // }
-});
+if (mediaQuery.matches) {
+  options.threshold = 0;
+  options.rootMargin = "-150px";
+}
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log(entry);
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const inc = target / speed;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 1);
+          } else {
+            count.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    }
+  });
+}, options);
+observer.observe(sectionAchievements);
